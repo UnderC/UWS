@@ -1,0 +1,25 @@
+mixin dummy(w)
+    .btn(style='width: ' + w + 'px;')
+
+<!doctype html>
+html
+    head
+        title= data.title
+        meta(charset='utf-8')
+        link(rel='stylesheet' type='text/css' href='/css/layout.css')
+    body
+        .container
+            nav
+                - btns.forEach(item => {
+                    +dummy(10)
+                    a(href=item.href class='btn')
+                        div= item.title
+                        - if (item.list) {
+                            .list
+                                - item.list.forEach(tmp => {
+                                    a(href=tmp.href class='btn')
+                                        div= tmp.title
+                                -})
+                        - }
+                - })
+            block content
