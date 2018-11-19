@@ -18,7 +18,6 @@ Server.set('views', './lib/views')
 Server.use(Express.static(path.join(__dirname, '/lib/public')))
 
 Server.listen(opts.WEB.PORT, () => {
-    
     log.log(`NEW WEB SERVER ON http://localhost:${opts.WEB.PORT}`, 'green')
     fs.readdir(path.join(__dirname, '/lib/routes'), (err, files) => {
         if (!err) {

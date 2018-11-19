@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    .content
+        .child
+            .dummy
+            .white
+                .dummy &nbsp;
+                h2= data.board.title
+                table
+                    tr
+                        th No.
+                        th(style='width: 70%;') 제목
+                        th(style='width: 30%;') 작성자
+                    - data.list.forEach(item => {
+                        tr(style='text-align: center;')
+                            td
+                                a(href=`/b/v/${data.board.table}/${item.id}`)= item.id
+                            td
+                                a(href=`/b/v/${data.board.table}/${item.id}`)= item.title
+                            td
+                                a(href=`/u/i/${item.writer}`)= item.nickname || item.writer
+                    - })
+                .dummy &nbsp;
+            .dummy

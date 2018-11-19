@@ -2,7 +2,7 @@
     "ALL" : {
         "SECRET" : "Se-C_REt!"
     }, "WEB" : {
-        "PORT" : 67
+        "PORT" : 80
     }, "WS" : {
         "PORT" : 12243
     }
