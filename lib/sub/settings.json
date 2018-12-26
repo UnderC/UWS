@@ -1,9 +1,0 @@
-{
-    "ALL" : {
-        "SECRET" : "Se-C_REt!"
-    }, "WEB" : {
-        "PORT" : 80
-    }, "WS" : {
-        "PORT" : 12243
-    }
-}

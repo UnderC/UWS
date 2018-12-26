@@ -1,0 +1,21 @@
+{
+    "GLOBAL" : {
+        "version" : {
+            "title" : "ALPHA",
+            "big" : 0,
+            "middle" : 1,
+            "small" : 0,
+            "build" : 1
+        }, "test" : true
+    }, "WEB" : {
+        "ports" : {
+            "test" : 3333,
+            "release" : 80
+        }, "secret" : "SeC-R_Et!"
+    }, "SOCKET" : {
+        "ports" : {
+            "test" : 12243,
+            "release" : 12243
+        }
+    }
+}
